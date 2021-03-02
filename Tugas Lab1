@@ -1,0 +1,95 @@
+//Soal nomer 1a//
+
+package com.xsis.example;
+
+        import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args)
+    {
+        int x;
+        Scanner nominal = new Scanner(System.in);
+            System.out.println(" Enter an integer for second :");
+
+        x = nominal.nextInt();
+            System.out.println(x + " second is " + x / 60 + " minutes and " + x % 60 + " second ");
+    }
+}
+
+//Soal nomer 1b//
+package com.xsis.example;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int input, n, jarak, output;
+        jarak = 1000;
+        n = jarak % 7;
+
+
+        Scanner baca = new Scanner(System.in);
+        System.out.println("Masukan kode hari ini : ");
+        input = baca.nextInt();
+        output = input + n;
+
+
+        if (output <= 7)
+        {
+            switch (output) {
+                case 1 :
+                    System.out.println("Maka hari itu adalah hari Minggu");
+                    break;
+                case 2 :
+                    System.out.println("Maka hari itu adalah hari Senin");
+                    break;
+                case 3 :
+                    System.out.println("Maka hari itu adalah hari Selasa");
+                    break;
+                case 4 :
+                    System.out.println("Maka hari itu adalah hari Rabu");
+                    break;
+                case 5 :
+                    System.out.println("Maka hari itu adalah hari Kamis");
+                    break;
+                case 6 :
+                    System.out.println("Maka hari itu adalah hari Jumat");
+                    break;
+                case 7 :
+                    System.out.println("Maka hari itu adalah hari Sabtu");
+                    break;
+            }
+        }
+
+        else if(output > 7)
+        {
+            output = output - 7;
+            switch (output)
+            {
+                case 1 :
+                    System.out.println("Maka hari itu adalah hari Minggu");
+                    break;
+                case 2 :
+                    System.out.println("Maka hari itu adalah hari Senin");
+                    break;
+                case 3 :
+                    System.out.println("Maka hari itu adalah hari Selasa");
+                    break;
+                case 4 :
+                    System.out.println("Maka hari itu adalah hari Rabu");
+                    break;
+                case 5 :
+                    System.out.println("Maka hari itu adalah hari Kamis");
+                    break;
+                case 6 :
+                    System.out.println("Maka hari itu adalah hari Jumat");
+                    break;
+                case 7 :
+                    System.out.println("Maka hari itu adalah hari Sabtu");
+                    break;
+            }
+        }
+    }
+}
