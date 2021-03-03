@@ -9,10 +9,10 @@ public class Main {
     public static void main(String[] args)
     {
         int x;
-        Scanner nominal = new Scanner(System.in);
+        Scanner nom = new Scanner(System.in);
             System.out.println(" Enter an integer for second :");
 
-        x = nominal.nextInt();
+        x = nom.nextInt();
             System.out.println(x + " second is " + x / 60 + " minutes and " + x % 60 + " second ");
     }
 }
